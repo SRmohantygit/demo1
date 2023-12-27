@@ -10,4 +10,11 @@ public class SearchLocation04Application {
 		SpringApplication.run(SearchLocation04Application.class, args);
 	}
 
+
+    @GetMapping("/")
+   public String getWelcomeMsg( ) {
+       return "Welcome to Location project ";
+     
+ }
+
 }

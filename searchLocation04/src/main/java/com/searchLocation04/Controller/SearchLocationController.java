@@ -14,7 +14,7 @@ public class SearchLocationController {
 	public String showSearchLocation(){
 		return"searchLocation";
 	}
-        // Bug - 130 modified code here 
+       
 	@RequestMapping("/findLocation")
 	public String findLocationBYID(@RequestParam("id") long id,ModelMap modelMap) {
 		LocationRestClient locationRC = new LocationRestClient();
